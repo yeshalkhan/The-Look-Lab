@@ -1,0 +1,6 @@
+﻿@model List<Product>
+@{
+    ViewBag.Title = "Products - The Look Lab";
+}
+
+@await Html.PartialAsync("_ProductsPartial", new Tuple<List<Product>, string>(Model, ViewBag.Heading));

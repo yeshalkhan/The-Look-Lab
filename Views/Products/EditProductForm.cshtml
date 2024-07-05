@@ -1,0 +1,69 @@
+﻿@using System.Text.Json;
+@model Product
+
+@{
+    ViewBag.Title = "Edit Product - The Look Lab";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<style>
+    #checkout {
+        padding: 0 40px 50px;
+    }
+
+    .row {
+        margin: 0 30px 0;
+    }
+</style>
+
+<!-- add product content -->
+<form class="container" id="checkout" 
+      action="/Products/EditProduct" method="post" enctype="multipart/form-data">
+    @{string productJson = JsonSerializer.Serialize(@Model);}
+    <h1 class="text-center" style="margin-top:0px; border-bottom: 2px solid #f693ad;">
+        Edit Product Details
+    </h1>
+    <div class="row">
+        <div class="col-md-5 py-2 py-md-0">
+            <label for="name">Product Name</label>
+            <input type="text" id="name" class="form-control form-control" name="name" placeholder="@Model.Name">
+        </div>
+        <div class="col-md-2 py-2 py-md-0">
+            <label for="price">Price</label>
+            <input type="text" id="price" class="form-control form-control" name="price" placeholder="@Model.Price">
+        </div>
+        <div class="col-md-5 py-2 py-md-0">
+            <label for="image">Change Image</label>
+            <input type="file" id="image" class="form-control form-control" name="image" accept="image/*">
+        </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-6 py-2 py-md-0">
+            <label for="brand">Brand</label>
+            <input type="text" id="brand" class="form-control form-control" name="brand" placeholder="@Model.Brand">
+        </div>
+        <div class="col-md-6 py-2 py-md-0">
+            <label for="category">Category</label>
+            <select id="category" name="category" class="form-control form-control">
+                <option value="" disabled selected hidden>@Model.Category</option>
+                <option value="Eyes">Eyes</option>
+                <option value="Lips">Lips</option>
+                <option value="Face">Face</option>
+            </select>
+            @* <input type="text" id="category" class="form-control form-control" name="category" placeholder="@Model.Category"> *@
+        </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-12 py-2 py-md-0">
+            <label for="comment">Description</label>
+            <textarea class="form-control" rows="2" id="comment" name="description" placeholder="@Model.Description"></textarea>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="margin-top:10px;">
+        <div class="text-center">
+            <input type="hidden" name="productString" value="@productJson">
+            <input class="btn btn-secondary" type="submit" value="Save Changes">
+        </div>
+    </div>
+</form>

@@ -1,0 +1,146 @@
+﻿@using System.Text.Json
+@model List<Product>
+
+@{
+    ViewBag.Title = "Manage Products - The Look Lab";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<style>
+    #p-container {
+        padding: 0 40px 50px;
+    }
+</style>
+
+<!-- products content -->
+<div class="container" id="p-container">
+    <h1 class="text-center" id="product-h1" style="margin-top:0px">@ViewBag.Heading</h1>
+    <br>
+    <div id="product">
+        @foreach (var product in Model)
+        {
+            string modalLink = product.Id + "-modal";
+            var productJson = JsonSerializer.Serialize(product);
+            <div class="product-box">
+                <div class="product-img">
+                    <a href="#@modalLink"><img src="@product.Image" alt="No preview available" class="img-responsive"></a>
+                </div>
+                <div class="product-desc">
+                    @* <form action="@Url.Action("ViewProduct","Products")" method="post">
+                    <input type="hidden" name="productId" value="@product.Id">
+                    <button type="submit">  <h4>@product.Name</h4>  </button>
+                    </form> *@
+                    <h4>@product.Name</h4>
+                    <div style="display: flex; justify-content:space-between;">
+                        <div>@product.Brand</div>
+                        <div>Rs. @product.Price</div>
+                    </div>
+                    <br style="clear: both;">
+                    <div style="display: flex; justify-content:space-around;">
+                        <div style="width:45%;">
+                            <form action="@Url.Action("EditProductForm","Products")" method="post">
+                                <input type="hidden" name="productString" value="@productJson">
+                                <button type="submit" id="edit-button" class="btn btn-secondary">
+                                    Edit
+                                    <i class="fa fa-pencil"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div style="width:45%;">
+                            <form action="@Url.Action("DeleteProduct","Products")" method="post">
+                                <input type="hidden" name="productId" value="@product.Id">
+                                <button type="submit" id="delete-button" class="btn btn-secondary">
+                                    Delete
+                                    <i class="fa fa-trash"></i>
+                                </button>
+
+                               @*  <!-- delete popup -->
+                                <div id="delete-popup" class="modal">
+                                    <p>Are you sure you want to delete the product?</p>
+                                    <div style="display: flex; justify-content:space-around;">
+                                        <div style="width:45%;">
+                                            <button type="submit" class="btn btn-secondary">Yes</button>
+                                        </div>
+                                        <div style="width:45%;">
+                                            <button href="#" class="btn btn-secondary">No</button>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="close-button">&times;</a>
+                                </div>
+                                <!-- delete popup --> *@
+
+                            </form>
+                        </div>
+                    </div>
+                    <br>
+                    <br style="clear: both;">
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<!-- products content -->
+
+<!-- product modals content-->
+@foreach (var product in Model)
+{
+    string modalLink = product.Id + "-modal";
+    var productJson = JsonSerializer.Serialize(product);
+    <div id="@modalLink" class="modal">
+        <div class="item-popup">
+            <div><img src="@product.Image" alt="No preview available" class="img-responsive"></div>
+            <div class="product-desc">
+                <h4>@product.Name</h4>
+                <p class="detail">
+                    Brand: @product.Brand<br>
+                    Price: Rs. @product.Price<br>
+                    Category: @product.Category
+                </p>
+                <p style="text-align: justify;">
+                    @product.Description
+                </p>
+                <div style="display: flex; justify-content:space-around;">
+                    <div style="width:45%;">
+                        <form action="@Url.Action("EditProduct","Products")" method="post">
+                            <input type="hidden" name="productString" value="@productJson">
+                            <button type="submit" id="edit-button" class="btn btn-secondary">
+                                Edit
+                                <i class="fa fa-pencil"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div style="width:45%;">
+                        <form action="@Url.Action("DeleteProduct","Products")" method="post">
+                            <input type="hidden" name="productId" value="@product.Id">
+                            <button type="submit" id="delete-button" class="btn btn-secondary">
+                                Delete
+                                <i class="fa fa-trash"></i>
+                            </button>
+
+                            @* <!-- delete popup -->
+                            <div id="delete-popup" class="modal">
+                                <p>Are you sure you want to delete the product?</p>
+                                <div style="display: flex; justify-content:space-around;">
+                                    <div style="width:45%;">
+                                        <button type="submit" class="btn btn-secondary">Yes</button>
+                                    </div>
+                                    <div style="width:45%;">
+                                        <button href="#" class="btn btn-secondary">No</button>
+                                    </div>
+                                </div>
+                                <a href="#" class="close-button">&times;</a>
+                            </div>
+                            <!-- delete popup -->
+ *@
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="close-button">&times;</a>
+    </div>
+}
+<!-- product modals content-->
+
+

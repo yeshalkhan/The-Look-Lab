@@ -1,0 +1,84 @@
+﻿@model List<Product>
+@{
+    ViewBag.Title = "The Look Lab";
+}
+
+@section Home {
+    <!-- home section -->
+    <section class="home" id="home" style="background-color:  #fef4ec;"
+             data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+        <div class="content">
+@*             <p>@ViewBag.CookieData</p>*@   
+            <h3>Discover Your<br>Best Look</h3>
+            <p>
+                Explore the latest trends and our expert tips to enhance your natural beauty.
+                Find your perfect match from our wide range of quality products.
+            </p>
+            <a href="@Url.Action("Index","Products")" class="btn">Order Now</a>
+
+        </div>
+        <div class="img">
+            <img src="/images/bg.png" alt="">
+        </div>
+    </section>
+    <!-- home section -->
+}
+
+<!-- products content -->
+@await Html.PartialAsync("_ProductsPartial", new Tuple<List<Product>,string>(Model,ViewBag.Heading));
+<div id="btntable" class="text-center" style="margin-top: 30px;"><a href="@Url.Action("Index","Products")" class="btn btn-secondary" style="padding: 10px 20px;">View More</a></div>
+<!-- products content -->
+
+<!-- about content -->
+<div class="container" id="about" data-aos="fade-up"
+     data-aos-duration="1500">
+    <h1 class="text-center">ABOUT US</h1>
+    <div class="row">
+        <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+                <img src="/images/about.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-md-6 py-3 py-md-0">
+            <p style="font-size: large; text-align: justify;">
+                Welcome to The Look Lab, your go-to destination for straightforward, effective beauty solutions. At The Look Lab, we're dedicated to helping you look great and feel even better with our top-quality cosmetics and skincare products.
+                Our goal is simple: to give you the tools you need to express yourself and boost your confidence. We believe that the right makeup and skincare can not only enhance your appearance but also improve your skin’s health. That's why we focus on providing products that are both effective and easy to use.
+            </p>
+            <!-- <div id="btnrd" ><button href="about.html">Read More</button></div> -->
+            <a href="@Url.Action("About","Home")" class="btn">Read More</a>
+
+        </div>
+    </div>
+</div>
+<!-- about content -->
+
+<!-- contact content -->
+<div class="container" id="contact" data-aos="fade-up"
+     data-aos-duration="1500">
+    <h1 class="text-center">
+        CONTACT US
+    </h1>
+    <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+            <input type="text" class="form-control form-control" placeholder="Name">
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <input type="email" class="form-control form-control" placeholder="Email">
+
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <input type="text" class="form-control form-control" placeholder="Phone">
+
+        </div>
+    </div>
+
+    <div class="form-group" style="margin-top: 30px;">
+        <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+    </div>
+    <div id="btntable" class="text-center"><a href="#" class="btn btn-secondary" style="padding: 10px 20px;">Message</a></div>
+
+</div>
+<!-- contact content -->

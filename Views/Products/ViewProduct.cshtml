@@ -1,0 +1,27 @@
+﻿@model Product
+@{
+    ViewBag.Title = @Model.Name + " - The Look Lab";
+}
+
+<div class="item-popup">
+    <div><img src="@Model.Image" alt="" class="img-responsive"></div>
+    <div class="product-desc">
+        <h4>@Model.Name</h4>
+        <p class="detail">
+            Brand: @Model.Brand<br>
+            Price: Rs. @Model.Price<br>
+            Category: @Model.Category
+        </p>
+        <p style="text-align: justify;">
+            @Model.Description
+        </p>
+        <div class="quantity-selector">
+            <p class="detail">Quantity:</p>
+            <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+        </div>
+        <form action="@Url.Action("AddToCart","Cart")" method="post">
+            <input type="hidden" name="productId" value="@Model.Id">
+            <button type="submit" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</button>
+        </form>
+    </div>
+</div>

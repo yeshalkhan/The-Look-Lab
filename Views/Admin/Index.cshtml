@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Administrator - The Look Lab";
+    Layout = "_AdminLayout";
+}
+
+<div class="container" id="analytics" style="margin-left:60px;">
+    <div class="row">
+        <div class="col-md-5 mx-2">
+            <div class="card bg-c-blue order-card">
+                <div class="card-block">
+                    <h4 class="m-b-10">Total Products</h4>
+                    <br />
+                    <h1 class="text-right">
+                        <i class="fa fa-spa f-left"></i>
+                        <span>@TempData["CountProducts"]</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5 mx-2">
+            <div class="card bg-c-green order-card">
+                <div class="card-block">
+                    <h4 class="m-b-10">Registered Users</h4>
+                    <br />
+                    <h1 class="text-right">
+                        <i class="fas fa-users f-left"></i>
+                        <span>@TempData["CountUsers"]</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-5 mx-2">
+            <div class="card bg-c-yellow order-card">
+                <div class="card-block">
+                    <h4 class="m-b-10">Orders Received</h4>
+                    <br />
+                    <h1 class="text-right">
+                        <i class="fa fa-cart-plus f-left"></i>
+                        <span>@TempData["CountOrders"]</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5 mx-2">
+            <div class="card bg-c-pink order-card">
+                <div class="card-block">
+                    <h4 class="m-b-10">Monthly Sales</h4>
+                    <br />
+                    <h1 class="text-right">
+                        <i class="fas fa-analytics f-left"></i>
+                        <span>&#x20A8; @TempData["MonthlySales"].00</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

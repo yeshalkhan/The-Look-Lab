@@ -1,0 +1,109 @@
+﻿@using System.Numerics
+@using Newtonsoft.Json
+@model Tuple<List<Product>, List<int>>
+@{
+    ViewBag.Title = "Shopping Cart - The Look Lab";
+}
+
+<!-- cart content -->
+<div class="container" data-aos="fade-up" id="cart"
+     data-aos-duration="1500">
+    <h1 class="text-center">YOUR CART</h1>
+    <form action="@Url.Action("Index", "Order")" method="post" class="row mt-4">
+        @if (@Model.Item1.Count == 0)
+        {
+            <div style="height:200px; width:300px; margin:auto; text-align:center">
+                <p>Your cart is empty</p><br>
+                <a href="@Url.Action("Index", "Products")" class="btn btn-secondary" style="margin-top: 10px; padding: 1.5%;">Continue Shopping</a>
+            </div>
+        }
+        else
+        {
+            int totalPrice = 0;
+            List<int> quantities = Model.Item2;
+            int index = 0;
+            foreach (var Product in Model.Item1)
+            {
+                string modalLink = Product.Id + "-modal";
+
+                <div class="col-md-8" style="margin-top: 20px;">
+                    <div class="cart-item">
+                        <div class="row">
+                            <div class=" col-md-3">
+                                <a href="#@modalLink">
+                                    <img src="@Product.Image" alt="No preview available" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <h4>@Product.Name</h4>
+                                <p class="detail">
+                                    Brand: @Product.Brand<br>
+                                    Price: Rs. @Product.Price
+                                </p>
+                                <div class="quantity-selector">
+                                    <p class="detail">Quantity:</p>
+                                    <input type="number" min="1" class="form-control" name="@quantities[index]" placeholder="@Model.Item2[index]" />
+                                   @*  <form method="post" action="@Url.Action("DeleteFromCart","Cart")">
+                                        <button type="submit" style:none>
+                                            <i class="fa fa-trash" style="font-size:30px;"></i>
+                                        </button>
+                                    </form> *@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                totalPrice += Product.Price * quantities[index];
+                index++;
+            }
+
+            <div class="col-md-4" style="margin-top: 20px;">
+                <div class="cart-summary">
+                    <h4>Order Summary</h4>
+                    <p class="detail">
+                        Total Items: @Model.Item1.Count<br>
+                        Total Price: Rs. @totalPrice
+                    </p>
+                    @{
+                        var jsonStringProducts = JsonConvert.SerializeObject(Model.Item1);
+                        var jsonStringQuantities = JsonConvert.SerializeObject(quantities);
+                    }
+                    <a href="@Url.Action("Index", "Products")" class="btn btn-secondary" style="margin-top: 10px; padding: 1.5%;">Continue Shopping</a>
+                    <input type="hidden" value="@totalPrice" name="total" />
+                    <input type="hidden" value="@jsonStringProducts" name="productsString" />
+                    <input type="hidden" value="@jsonStringQuantities" name="quantitiesString" />
+                    <button type="submit" class="btn btn-secondary" style="padding: 1.5%;">Checkout</button>
+                </div>
+            </div>
+        }
+    </form>
+</div>
+<!-- cart content -->
+
+<!-- product modals content-->
+@foreach (var product in Model.Item1)
+{
+    string modalLink = product.Id + "-modal";
+    <div id="@modalLink" class="modal">
+        <div class="item-popup">
+            <div><img src="@product.Image" alt="No preview available" class="img-responsive"></div>
+            <div class="product-desc">
+                <h4>@product.Name</h4>
+                <p class="detail">
+                    Brand: @product.Brand<br>
+                    Price: Rs. @product.Price<br>
+                    Category: @product.Category
+                </p>
+                <p style="text-align: justify;">
+                    @product.Description
+                </p>
+                <div class="quantity-selector">
+                    <p class="detail">Quantity:</p>
+                    <input type="number" name="quantity" class="form-control form-control" placeholder="Quantity" min="1">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="close-button">&times;</a>
+    </div>
+}
+<!-- product modals content-->

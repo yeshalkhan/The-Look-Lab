@@ -1,0 +1,73 @@
+﻿
+@model List<Product>
+@{
+    ViewBag.Title = "Products - The Look Lab";
+}
+
+<!-- products content -->
+<div class="container" data-aos="fade-up" id="p-container"
+data-aos-duration="1500">
+    <h1 class="text-center" id="product-h1">PRODUCTS</h1>
+    <br>
+    <div id="product">
+        @foreach (var product in Model)
+        {
+            string modalLink = product.Id + "-modal";
+            <div class="product-box">
+                <div class="product-img">
+                    <a href="#@modalLink"><img src="@product.Image" alt="" class="img-responsive"></a>
+                </div>
+                <div class="product-desc">
+                    @* <form action="@Url.Action("ViewProduct","Products")" method="post">
+                        <input type="hidden" name="productId" value="@product.Id">
+                        <button type="submit">  <h4>@product.Name</h4>  </button>
+                    </form> *@
+                    <h4>@product.Name</h4>
+                    <p class="desc">@product.Brand</p>
+                    <p class="price">Rs. @product.Price</p>
+                    <br style="clear: both;">
+                    <br>
+                    <form action="@Url.Action("AddToCart","Cart")" method="post">
+                        <input type="hidden" name="productId" value="@product.Id">
+                        <button type="submit" class="btn btn-secondary">Add to Cart</button>
+                    </form>
+                    <br>
+                    <br style="clear: both;">
+                </div>
+            </div>
+        }
+     </div>
+</div>
+<!-- products content -->
+
+<!-- product modals content-->
+@foreach(var product in Model)
+{
+    string modalLink = product.Id + "-modal";
+    <div id="@modalLink" class="modal">
+        <div class="item-popup">
+            <div><img src="@product.Image" alt="" class="img-responsive"></div>
+            <div class="product-desc">
+                <h4>@product.Name</h4>
+                <p class="detail">
+                    Brand: @product.Brand<br>
+                    Price: Rs. @product.Price<br>
+                    Category: @product.Category
+                </p>
+                <p style="text-align: justify;">
+                    @product.Description
+                </p>
+                <div class="quantity-selector">
+                    <p class="detail">Quantity:</p>
+                    <input type="number" class="form-control form-control" placeholder="Quantity" min="1">
+                </div>
+                <form action="@Url.Action("AddToCart","Cart")" method="post">
+                    <input type="hidden" name="productId" value="@product.Id">
+                    <button type="submit" class="btn btn-secondary" style="margin-top: 10px; padding: 2%;">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+        <a href="#" class="close-button">&times;</a>
+    </div>
+}
+<!-- product modals content-->

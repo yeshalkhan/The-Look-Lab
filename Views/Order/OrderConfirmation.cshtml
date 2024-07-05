@@ -1,0 +1,41 @@
+﻿@model The_Look_Lab.View_Models.OrderDetails
+
+@{
+    ViewBag.Title = "Order Confirmation - The Look Lab";
+}
+
+
+<div style="margin-top:50px; margin-bottom:50px;">
+    <h5>Your order has been confirmed</h5>
+    <h6 style="margin-top:50px;">Order Summary</h6>
+    <p><strong>Order ID:</strong> @Model.order.Id</p>
+    <p><strong>Name:</strong> @Model.order.Name</p>
+    <p><strong>Email:</strong> @Model.order.Email</p>
+    <p><strong>Phone Number:</strong> @Model.order.PhoneNumber</p>
+    <p><strong>Postal Code:</strong> @Model.order.PostalCode</p>
+    <p><strong>Address:</strong> @Model.order.Address</p>
+    <p><strong>State:</strong> @Model.order.State</p>
+    <p><strong>City:</strong> @Model.order.City</p>
+    <p><strong>Delivery Instructions:</strong> @Model.order.DeliveryInstructions</p>
+    <p><strong>Order Date:</strong> @Model.order.OrderDate</p>
+    <p><strong>Status:</strong> @Model.order.Status</p>
+
+    <h6>Order Items</h6>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.items)
+            {
+                <tr>
+                    <td>@item.ProductId</td>
+                    <td>@item.Quantity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

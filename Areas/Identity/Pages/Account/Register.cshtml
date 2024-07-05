@@ -1,0 +1,76 @@
+﻿@page
+@model RegisterModel
+
+@{
+    ViewBag.Title = "Create Account - The Look Lab";
+    Layout = "~/Views/Shared/_SimpleLayout.cshtml";
+}
+
+<!-- signup content -->
+<form style="margin-bottom:50px;" class="container" id="register" data-aos="fade-up" data-aos-duration="1500" method="post" asp-route-returnUrl="@Model.ReturnUrl">
+    <h1 class="text-center">Register</h1>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="form-group">
+                <input asp-for="Input.Name" class="form-control" autocomplete="on" aria-required="true" placeholder="Name" />
+                <span asp-validation-for="Input.Name" class="text-danger"></span>
+                <span asp-validation-for="Input.Name" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+@*     <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="form-group">
+                <input asp-for="Input.PhoneNumber" class="form-control" autocomplete="on" aria-required="true" placeholder="Phone Number" />
+                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+            </div>
+        </div>
+    </div> *@
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="form-group">
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="Email" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="form-group">
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Password" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="form-group">
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Confirm Password" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="text-center">
+                <input type="submit" value="Create Account" class="btn btn-secondary" />
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="text-center">
+                <a asp-area="Identity" asp-page="/Account/Login" class="login-button">Already have an account? Sign in</a>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- signup content -->
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
