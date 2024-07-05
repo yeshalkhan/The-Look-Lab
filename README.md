@@ -16,6 +16,7 @@ The Look Lab is a user-friendly cosmetics website designed using HTML, CSS and A
 - HTML/CSS to design front end
 - Bootstrap for responsiveness
 - ASP.Net Core MVC for backend
-- Dapper with SQL server for Database management
-
+- Dapper and Generic Repository pattern for Database management
+- Dependency Injection pattern for loose coupling
+- ASP.Net Core Identity for User management
   
