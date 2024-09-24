@@ -12,6 +12,9 @@ The Look Lab is a user-friendly cosmetics website designed using HTML, CSS, Boot
 - Session Management: Uses sessions to store unregistered users' cart data.
 - Database Management: Uses Generic Repsoitory pattern to store infromation about users, products, cart, orders, order details in database.
 
+## Screenshots:
+Find screenshots of the website in the attached document: [Preview.pdf](https://github.com/user-attachments/files/17118747/Preview.pdf)
+
 ## Tech Stack:
 - HTML/CSS to design front end
 - Bootstrap for responsiveness
@@ -28,6 +31,3 @@ The Look Lab is a user-friendly cosmetics website designed using HTML, CSS, Boot
 - Asynchronous programming and Caching to enhance speed
 - SignalR for real time stock updates
 - AJAX for partially refreshing pages
-
-## Screenshots:
-Find screenshots of the website in the attached document: [Preview.pdf](https://github.com/user-attachments/files/17118747/Preview.pdf)
