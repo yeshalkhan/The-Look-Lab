@@ -28,3 +28,6 @@ The Look Lab is a user-friendly cosmetics website designed using HTML, CSS, Boot
 - Asynchronous programming and Caching to enhance speed
 - SignalR for real time stock updates
 - AJAX for partially refreshing pages
+
+## Screenshots:
+Find screenshots of the website in the attached document: [Preview.pdf](https://github.com/user-attachments/files/17118747/Preview.pdf)
