@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Study\\Semester 6\\The Look Lab - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web\\Web.csproj|d:\\study\\semester 6\\the look lab - copy\\web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web\\Web.csproj|d:\\study\\semester 6\\the look lab - copy\\web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web\\Web.csproj|solutionrelative:web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web\\Web.csproj|d:\\study\\semester 6\\the look lab - copy\\web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web\\Web.csproj|solutionrelative:web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web\\Web.csproj|d:\\study\\semester 6\\the look lab - copy\\web\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web\\Web.csproj|solutionrelative:web\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{905698BA-0A33-49F7-B34C-946BBA4E8C37}|API\\API.csproj|d:\\study\\semester 6\\the look lab - copy\\api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{905698BA-0A33-49F7-B34C-946BBA4E8C37}|API\\API.csproj|solutionrelative:api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{435EAACA-D9C2-4E8A-85FE-8D5398478691}|Infrastructure\\Infrastructure.csproj|d:\\study\\semester 6\\the look lab - copy\\infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{435EAACA-D9C2-4E8A-85FE-8D5398478691}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADDB54C-B977-4D00-9D93-B90DC29B5457}|Application\\Application.csproj|d:\\study\\semester 6\\the look lab - copy\\application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADDB54C-B977-4D00-9D93-B90DC29B5457}|Application\\Application.csproj|solutionrelative:application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAgwKQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-18T05:17:02.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Web\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "Web\\wwwroot\\css\\style.css",
+              "ToolTip": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Web\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "Web\\wwwroot\\css\\style.css",
+              "ViewState": "AgIAAMICAAAAAAAAAAAAwM4CAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-18T05:15:35.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Web\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "Web\\Views\\Order\\Index.cshtml",
+              "ToolTip": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Web\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "Web\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T21:33:23.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Web\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Web\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Web\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Web\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-09T18:36:20.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\The Look Lab - Copy\\API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\The Look Lab - Copy\\API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "API\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAFwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T13:05:48.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Application\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\OrderService.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Application\\Services\\OrderService.cs",
+              "RelativeToolTip": "Application\\Services\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T13:49:19.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Infrastructure\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\OrderRepository.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Infrastructure\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T13:48:05.731Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

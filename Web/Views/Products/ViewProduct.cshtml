@@ -1,0 +1,34 @@
+﻿@using Domain.Entities;
+@model Product
+@{
+    ViewBag.Title = @Model.Name + " - The Look Lab";
+}
+
+<div class="container" data-aos-duration="1500" data-aos="fade-up" style="margin-top: 50px;">
+    <div class="product-view row mt-4">
+        <div class="col-12 col-md-6 py-2 py-md-0 w-100">
+            <img src="@Model.Image" alt="No preview available" class="img-fluid" style="height:auto">
+        </div>
+        <div class="col-12 col-md-6 py-2 py-md-0 product-desc">
+            <h4>@Model.Name</h4>
+            <p class="detail">
+                Brand: @Model.Brand<br>
+                Category: @Model.Category<br>
+            </p>
+            <b>Rs. @Model.Price</b>
+            <p class="stock-notification" id="product-stock-@Model.Id" data-product-id="@Model.Id"
+               style="color: #d25b5f; visibility: @(Model.Stock < 10 ? "visible" : "hidden");">
+                Hurry! only @Model.Stock items left
+            </p>
+            <p style="text-align: justify;">@Model.Description</p>
+            <div class="quantity-selector">
+                <p class="detail">Quantity:</p>
+                <input type="number" id="quantity" class="form-control" value="1" name="quantity" min="1" max="@Model.Stock" step="1">
+            </div>
+            <br>
+            <button type="button" onclick="addToCart(this)" data-product-id="@Model.Id" class="btn btn-secondary">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+ 

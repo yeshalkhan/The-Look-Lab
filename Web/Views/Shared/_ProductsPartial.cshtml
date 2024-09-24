@@ -1,0 +1,73 @@
+﻿@using Domain.Entities;
+@model Tuple<List<Product>, string>
+
+<!-- products content -->
+<div class="container" data-aos="fade-up" id="p-container"
+     data-aos-duration="1500">
+    <h1 class="text-center" id="product-h1">@Model.Item2</h1>
+    <br>
+    <div id="product" style="justify-content:space-evenly">
+        @if (Model.Item1.Count == 0)
+        {   
+            <div>
+                <p>No products found</p> 
+            </div>
+        }
+
+        @foreach (var product in Model.Item1)
+        {
+            string modalLink = product.Id + "-modal";
+            <div class="product-box">
+                <div class="product-img">
+                    <a href="/Products/ViewProduct/@product.Id">
+                        <img src="@product.Image" alt="No preview available" class="img-responsive">
+                    </a>
+                </div>
+                <div class="product-desc">
+                    <h4>@product.Name</h4>
+                    <p class="desc">@product.Brand</p>
+                    <p class="price">Rs. @product.Price</p>
+                    <br style="clear: both;">
+                    <br>
+                    <input type="hidden" id="quantity" value="1" />
+                    <button type="button" onclick="addToCart(this)" data-product-id="@product.Id" class="btn btn-secondary">Add to Cart</button>
+                    <br>
+                    <br style="clear: both;">
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<!-- products content -->
+
+<!-- product modals content-->
+ @* @foreach (var product in Model.Item1)
+ {
+     string modalLink = product.Id + "-modal";
+     <div id="@modalLink" class="modal">
+         <div class="item-popup">
+             <div><img src="@product.Image" alt="No preview available" class="img-responsive"></div>
+             <div class="product-desc">
+                 <h4>@product.Name</h4>
+                 <p class="detail">
+                     Brand: @product.Brand<br>
+                     Price: Rs. @product.Price<br>
+                     Category: @product.Category
+                 </p>
+                 <p style="text-align: justify;">
+                     @product.Description
+                 </p>
+                 <div class="quantity-selector">
+                     <p class="detail">Quantity:</p>
+                     <input type="number" id="quantity" name="quantity" class="form-control form-control" placeholder="Quantity" min="1">
+                 </div>
+                 <button type="button" onclick="addToCart(this)" data-product-id="@product.Id" class="btn btn-secondary">Add to Cart</button>
+             </div>
+         </div>
+         <a href="#" class="close-button">&times;</a>
+     </div>
+ } *@
+<!-- product modals content-->
+
+
+

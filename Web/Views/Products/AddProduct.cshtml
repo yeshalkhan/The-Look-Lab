@@ -1,0 +1,84 @@
+﻿@using Domain.Entities;
+@model Product
+
+@{
+    ViewBag.Title = "Add Product - The Look Lab";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<style>
+    #checkout {
+        padding: 0 40px 50px;
+    }
+
+    .row {
+        margin: 0 30px 0;
+    }
+</style>
+
+<!-- add product content -->
+<form class="container" id="add-product-form" enctype="multipart/form-data" novalidate class="needs-validation">
+    @Html.AntiForgeryToken()
+    <h1 class="text-center" style="margin-top:0px; border-bottom: 2px solid #f693ad;">
+        Add Product Details
+    </h1>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row">
+        <div class="col-md-5 py-2 py-md-0">
+            <label asp-for="Name">Product Name</label>
+            <input type="text" asp-for="Name" class="form-control" name="Name" placeholder="Product Name">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="col-md-2 py-2 py-md-0">
+            <label asp-for="Price">Price</label>
+            <input type="text" asp-for="Price" class="form-control" name="Price" placeholder="Price">
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="col-md-5 py-2 py-md-0">
+            <label for="image">Upload Image</label>
+            <input type="file" id="image" class="form-control" name="image" accept="image/*" required>
+            <span id="image-validation" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-5 py-2 py-md-0">
+            <label asp-for="Brand">Brand</label>
+            <input type="text" asp-for="Brand" class="form-control" name="Brand" placeholder="Brand Name">
+            <span asp-validation-for="Brand" class="text-danger"></span>
+        </div>
+        <div class="col-md-2 py-2 py-md-0">
+            <label asp-for="Stock">Stock</label>
+            <input type="number" asp-for="Stock" class="form-control" name="Stock" placeholder="Stock">
+            <span asp-validation-for="Stock" class="text-danger"></span>
+        </div>
+        <div class="col-md-5 py-2 py-md-0">
+            <label asp-for="Category">Category</label>
+            <select asp-for="Category" name="Category" class="form-control">
+                <option value="" disabled selected hidden>Category</option>
+                <option value="Eyes">Eyes</option>
+                <option value="Lips">Lips</option>
+                <option value="Face">Face</option>
+            </select>
+            <span asp-validation-for="Category" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-12 py-2 py-md-0">
+            <label asp-for="Description">Description</label>
+            <textarea class="form-control" rows="2" asp-for="Description" name="Description" placeholder="Description"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="margin-top:10px;">
+        <div class="text-center">
+            <button class="btn btn-secondary" type="button" onclick="addProduct()">Add Product</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

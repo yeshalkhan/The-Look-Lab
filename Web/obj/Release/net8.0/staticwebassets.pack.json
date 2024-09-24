@@ -1,0 +1,413 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\The Look Lab.bundle.scp.css",
+      "PackagePath": "staticwebassets\\The Look Lab.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\css\\adminstyle.css",
+      "PackagePath": "staticwebassets\\css\\adminstyle.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\about.jpg",
+      "PackagePath": "staticwebassets\\images\\about.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\add.png",
+      "PackagePath": "staticwebassets\\images\\add.png"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\bag-icon.png",
+      "PackagePath": "staticwebassets\\images\\bag-icon.png"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\bg.png",
+      "PackagePath": "staticwebassets\\images\\bg.png"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\cart.png",
+      "PackagePath": "staticwebassets\\images\\cart.png"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\eye.jpg",
+      "PackagePath": "staticwebassets\\images\\eye.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\face.jpg",
+      "PackagePath": "staticwebassets\\images\\face.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\lips.jpg",
+      "PackagePath": "staticwebassets\\images\\lips.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\menu.png",
+      "PackagePath": "staticwebassets\\images\\menu.png"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\search-icon.png",
+      "PackagePath": "staticwebassets\\images\\search-icon.png"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\up-arrow.png",
+      "PackagePath": "staticwebassets\\images\\up-arrow.png"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\images\\user-icon.png",
+      "PackagePath": "staticwebassets\\images\\user-icon.png"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\12126e10_face-4.jpg",
+      "PackagePath": "staticwebassets\\product images\\12126e10_face-4.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\1677304e_face-4.jpg",
+      "PackagePath": "staticwebassets\\product images\\1677304e_face-4.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\17356c34_lips-4.jpg",
+      "PackagePath": "staticwebassets\\product images\\17356c34_lips-4.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\378c8f70_eye-2.jpg",
+      "PackagePath": "staticwebassets\\product images\\378c8f70_eye-2.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\7c8e9c4d_eye-6.jpg",
+      "PackagePath": "staticwebassets\\product images\\7c8e9c4d_eye-6.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\a0fd5300_eye-5.jpg",
+      "PackagePath": "staticwebassets\\product images\\a0fd5300_eye-5.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\a976e79b_lips-6.jpg",
+      "PackagePath": "staticwebassets\\product images\\a976e79b_lips-6.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\d197c66f_eye-6.jpg",
+      "PackagePath": "staticwebassets\\product images\\d197c66f_eye-6.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\eye-1.jpg",
+      "PackagePath": "staticwebassets\\product images\\eye-1.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\eye-2.jpg",
+      "PackagePath": "staticwebassets\\product images\\eye-2.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\eye-3.jpg",
+      "PackagePath": "staticwebassets\\product images\\eye-3.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\eye-4.jpg",
+      "PackagePath": "staticwebassets\\product images\\eye-4.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\eye-7.jpg",
+      "PackagePath": "staticwebassets\\product images\\eye-7.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\face-1.jpg",
+      "PackagePath": "staticwebassets\\product images\\face-1.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\face-2.jpg",
+      "PackagePath": "staticwebassets\\product images\\face-2.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\face-3.jpg",
+      "PackagePath": "staticwebassets\\product images\\face-3.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\face5.jpg",
+      "PackagePath": "staticwebassets\\product images\\face5.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\lips-1.jpg",
+      "PackagePath": "staticwebassets\\product images\\lips-1.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\lips-2.jpg",
+      "PackagePath": "staticwebassets\\product images\\lips-2.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\lips-6.jpg",
+      "PackagePath": "staticwebassets\\product images\\lips-6.jpg"
+    },
+    {
+      "Id": "D:\\Yeshal\\Semester 6\\Software Construction and Development\\The Look Lab\\wwwroot\\product images\\lips-7.jpg",
+      "PackagePath": "staticwebassets\\product images\\lips-7.jpg"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.The Look Lab.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.The Look Lab.props",
+      "PackagePath": "build\\The Look Lab.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.The Look Lab.props",
+      "PackagePath": "buildMultiTargeting\\The Look Lab.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.The Look Lab.props",
+      "PackagePath": "buildTransitive\\The Look Lab.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

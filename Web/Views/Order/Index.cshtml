@@ -1,0 +1,175 @@
+﻿@using Domain.Entities;
+@model CheckoutViewModel 
+
+@{
+    ViewBag.Title = "Checkout - The Look Lab";
+    Layout = "~/Views/Shared/_SimpleLayout.cshtml";
+}
+
+<!-- checkout content -->
+<form class="container" id="checkout" data-aos="fade-up" style="padding-bottom: 50px;"
+      data-aos-duration="1500" class="needs-validation" novalidate>
+      @Html.AntiForgeryToken()
+    <h1 class="text-center" style="margin-top:20px; border-bottom: 2px solid #f693ad;">
+        CHECKOUT
+    </h1>
+    <div class="row">
+        <div class="col-md-7">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="col-md-6 py-3 py-md-0">
+                    <input type="text" asp-for="order.CustomerName" name="CustomerName" class="form-control" placeholder="Name">
+                    <span asp-validation-for="order.CustomerName" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 py-3 py-md-0">
+                    <input type="email" asp-for="order.Email" name="Email" class="form-control" placeholder="Email">
+                    <span asp-validation-for="order.Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-6 py-3 py-md-0">
+                    <input type="text" asp-for="order.PhoneNumber" name="PhoneNumber" class="form-control" placeholder="Phone">
+                    <span asp-validation-for="order.PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 py-3 py-md-0">
+                    <input type="text" asp-for="order.PostalCode" name="PostalCode" class="form-control" placeholder="Postal Code" required>
+                    <span asp-validation-for="order.PostalCode" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group" style="margin-top: 30px;">
+                <input type="text" asp-for="order.Address" name="Address" class="form-control" placeholder="Address" required>
+                <span asp-validation-for="order.Address" class="text-danger"></span>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-6 py-3 py-md-0">
+                    <input type="text" asp-for="order.State" name="State" class="form-control" placeholder="State/Province" required>
+                    <span asp-validation-for="order.State" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 py-3 py-md-0">
+                    <select asp-for="order.City" name="City" class="form-control">
+                        <option value="" disabled selected hidden>City</option>
+                        <option value="Abbottabad">Abbottabad</option>
+                        <option value="Bahawalpur">Bahawalpur</option>
+                        <option value="Dera Ghazi Khan">Dera Ghazi Khan</option>
+                        <option value="Faisalabad">Faisalabad</option>
+                        <option value="Gujranwala">Gujranwala</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Multan">Multan</option>
+                        <option value="Peshawar">Peshawar</option>
+                        <option value="Quetta">Quetta</option>
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Sialkot">Sialkot</option>
+                        <option value="Sukkur">Sukkur</option>
+                        <option value="Larkana">Larkana</option>
+                        <option value="Jhang">Jhang</option>
+                        <option value="Sheikhupura">Sheikhupura</option>
+                        <option value="Mardan">Mardan</option>
+                        <option value="Muzaffarabad">Muzaffarabad</option>
+                        <option value="Gujrat">Gujrat</option>
+                        <option value="Kasur">Kasur</option>
+                        <option value="Rahim Yar Khan">Rahim Yar Khan</option>
+                        <option value="Sahiwal">Sahiwal</option>
+                        <option value="Okara">Okara</option>
+                        <option value="Wah Cantonment">Wah Cantonment</option>
+                        <option value="Charsadda">Charsadda</option>
+                    </select>
+                    <span asp-validation-for="order.City" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group" style="margin-top: 30px;">
+                <textarea class="form-control" asp-for="order.DeliveryInstructions" name="DeliveryInstructions" rows="2" id="comment" placeholder="Delivery Instructions"></textarea>
+                <span asp-validation-for="order.DeliveryInstructions" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="checkout-summary" id="cart">
+                <h4>Order Summary</h4>
+                @{
+                    int index = 0;
+                }
+                @foreach (var product in Model.products)
+                {
+                    <div class="row" style="margin-bottom:8px;">
+                        <div class="col-md-3">
+                            <img src="@product.Image" alt="" class="cart-img-responsive">
+                        </div>
+                        <div class="col-md-9">
+                            <h4 style="display: inline;">@product.Name</h4>
+                            @{
+                                int quantity = @Model.quantities != null ? Model.quantities[index] : 1;
+                            }
+                            <h4 style="display: inline; text-align: right;">&nbsp; &times; @quantity</h4>
+                            <p class="detail">Rs. @product.Price<br></p>
+                        </div>
+                    </div>
+                    index++;
+                }
+                <div class="form-group" style="margin-top: 30px;">
+                    <p class="detail">Sub Total : Rs. @ViewBag.TotalPrice</p>
+                    <p class="detail">Delivery Fee : 200</p>
+                    @{
+                        int total = @ViewBag.TotalPrice + 200;
+                    }
+                    <h4>Total : @total</h4>
+                    <input type="hidden" asp-for="order.TotalPrice" value="@total" name="TotalPrice" />
+                </div>
+                <div id="btntable" class="text-center" style="margin-bottom: 50px;">
+                    <button type="button" onclick="addOrder()" class="btn btn-secondary">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- checkout content -->
+
+<script type="text/javascript">
+    function showMessage(msg) {
+        var message = document.getElementById("message");
+        message.innerText = msg;
+        message.className = "message show";
+        setTimeout(function () {
+            message.className = "message";
+        }, 2000); // Hide after 2 seconds
+    };
+
+    function addOrder() {
+        var form = document.getElementById('checkout');
+        var formData = new FormData(form);
+
+        $.ajax({
+            type: 'POST',
+            url: '/Order/AddOrder',
+            data: formData,
+            processData: false,  // Prevent jQuery from automatically transforming the data into a query string
+            contentType: false,  // Let the browser set the content type
+            success: function(response) {
+                window.location.href = '/Home/DisplayMessage?url=OrderConfirmation';
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log('Error details:', jqXHR.responseText);
+                // Update the form with server-side validation errors
+                if (jqXHR.status === 400) {
+                    var response = JSON.parse(jqXHR.responseText);
+                    var validationSummary = $('div.asp-validation-summary');
+                    validationSummary.html('');
+                    $.each(response, function (key, value) {
+                        var errorContainer = $('[name="' + key + '"]').next('span');
+                        errorContainer.html(value[0]);
+                    });
+                } else {
+                    showMessage('Could not place order');
+                }
+            }
+        });
+    };
+</script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

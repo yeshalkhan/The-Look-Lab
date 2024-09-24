@@ -1,0 +1,89 @@
+﻿@using System.Numerics
+@using Newtonsoft.Json
+@using Domain.Entities;
+@model Tuple<List<Product>, List<int>>
+@{
+    ViewBag.Title = "Shopping Cart - The Look Lab";
+}
+
+<!-- cart content -->
+<div class="container" data-aos="fade-up" id="cart" data-aos-duration="1500">
+    <h1 class="text-center">YOUR CART</h1>
+    <form action="@Url.Action("Index", "Order")" method="post" class="row mt-4">
+        @if (@Model.Item1.Count == 0)
+        {
+            <div style="height:200px; width:300px; margin:auto; text-align:center">
+                <p>Your cart is empty</p><br>
+                <a href="@Url.Action("Index", "Products")" class="btn btn-secondary" style="margin-top: 10px; padding: 1.5%;">Continue Shopping</a>
+            </div>
+        }
+        else
+        {
+            int totalPrice = 0;
+            int index = 0;
+            foreach (var Product in Model.Item1)
+            {
+                <div class="col-md-8" style="margin-top: 20px;" >
+                    <div class="cart-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="/Product/ViewProduct/@Product.Id">
+                                    <img src="@Product.Image" alt="No preview available" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <div style="display:flex; width:auto; justify-content:space-between;">
+                                    <div>
+                                        <p>@Product.Name</p>
+                                    </div>
+                                    <div>
+                                        <button type="button" id="cart-button" data-product-id="@Product.Id" onclick="deleteFromCart(this)">
+                                            &#x2715;
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="detail">
+                                    Brand: @Product.Brand<br>
+                                    Price: Rs. @Product.Price
+                                </p>
+                                <div class="quantity-selector">
+                                    <p class="detail">Quantity:</p>
+                                    <input type="number" id="quantity-@Product.Id" class="form-control quantity-input"
+                                           name="quantities[@index]" value="@Model.Item2[index]"
+                                           min="1" max="@Product.Stock" step="1"
+                                           data-price="@Product.Price"
+                                           data-original-quantity="@Model.Item2[index]"
+                                           data-original-price="@Product.Price * @Model.Item2[index]"
+                                           onchange="updateQuantity(@index, this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                totalPrice += Product.Price * Model.Item2[index];
+                index++;
+            }
+
+            <div class="col-md-4" style="margin-top: 20px;">
+                <div class="cart-summary">
+                    <h4>Order Summary</h4>
+                    <p class="detail">
+                        Total Items: @Model.Item1.Count<br>
+                        Total Price: Rs. <span id="total-price">@totalPrice</span>
+                    </p>
+                        @{
+                            var jsonStringProducts = JsonConvert.SerializeObject(Model.Item1);
+                            var jsonStringQuantities = JsonConvert.SerializeObject(Model.Item2);
+                        }
+                    <a href="@Url.Action("Index", "Products")" class="btn btn-secondary" style="margin-top: 10px; padding: 1.5%;">Continue Shopping</a>
+                    <input type="hidden" value="@totalPrice" name="total" id="total-hidden" />
+                    <input type="hidden" value="@jsonStringProducts" name="productsString" />
+                    <input type="hidden" value="@jsonStringQuantities" name="quantitiesString" />
+                    <button type="submit" class="btn btn-secondary" style="padding: 1.5%;">Checkout</button>
+                </div>
+            </div>
+        }
+    </form>
+</div>
+<!-- cart content -->
+

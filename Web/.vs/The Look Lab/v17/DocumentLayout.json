@@ -1,0 +1,204 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web.csproj|d:\\study\\semester 6\\scd\\the look lab\\web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web.csproj|d:\\study\\semester 6\\scd\\the look lab\\web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{905698BA-0A33-49F7-B34C-946BBA4E8C37}|..\\API\\API.csproj|d:\\study\\semester 6\\scd\\the look lab\\api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{905698BA-0A33-49F7-B34C-946BBA4E8C37}|..\\API\\API.csproj|d:\\study\\semester 6\\scd\\the look lab\\api\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{905698BA-0A33-49F7-B34C-946BBA4E8C37}|..\\API\\API.csproj|d:\\study\\semester 6\\scd\\the look lab\\api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{905698BA-0A33-49F7-B34C-946BBA4E8C37}|..\\API\\API.csproj|d:\\study\\semester 6\\scd\\the look lab\\api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED0A8759-E99C-4CCE-81D5-9780CE45565F}|..\\Domain\\Domain.csproj|d:\\study\\semester 6\\scd\\the look lab\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{905698BA-0A33-49F7-B34C-946BBA4E8C37}|..\\API\\API.csproj|d:\\study\\semester 6\\scd\\the look lab\\api\\dto\\addproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{905698BA-0A33-49F7-B34C-946BBA4E8C37}|..\\API\\API.csproj|d:\\study\\semester 6\\scd\\the look lab\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web.csproj|d:\\study\\semester 6\\scd\\the look lab\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web.csproj|d:\\study\\semester 6\\scd\\the look lab\\web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E6C4CB-EDB4-4D81-8EFF-E1FA1C6210E3}|Web.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Web\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Web\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T16:41:14.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Web\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Web\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T16:40:50.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "..\\API\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "..\\API\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAADsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T16:23:58.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Product.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T16:15:57.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "..\\API\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "..\\API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAIcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:06:47.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddProductDTO.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\DTO\\AddProductDTO.cs",
+              "RelativeDocumentMoniker": "..\\API\\DTO\\AddProductDTO.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\DTO\\AddProductDTO.cs",
+              "RelativeToolTip": "..\\API\\DTO\\AddProductDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T14:56:47.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Web\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T12:57:55.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "..\\API\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\Controllers\\CartController.cs",
+              "RelativeToolTip": "..\\API\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:52:21.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "..\\API\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "..\\API\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:52:26.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\Program.cs",
+              "RelativeDocumentMoniker": "..\\API\\Program.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\Program.cs",
+              "RelativeToolTip": "..\\API\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:53:39.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Web\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Web\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:50:53.673Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

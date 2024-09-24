@@ -1,0 +1,60 @@
+﻿@page
+@model LoginModel
+
+
+@{
+    ViewBag.Title = "Login - The Look Lab";
+    Layout = "~/Views/Shared/_SimpleLayout.cshtml";
+
+}
+
+<!-- login content -->
+<form class="container" id="login" data-aos="fade-up" data-aos-duration="1500" method="post">
+    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+    <h1 class="text-center">Login</h1>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="form-group">
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" placeholder="Email" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="form-group">
+                <input asp-for="Input.Password" type="password" class="form-control" autocomplete="current-password" placeholder="Password" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+  @*   <div class="row justify-content-center">
+    <div class="checkbox mb-3">
+        <label>
+            <input class="form-check-input" asp-for="Input.RememberMe" />
+            @Html.DisplayNameFor(m => m.Input.RememberMe)
+        </label>
+    </div>
+    </div> *@
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="text-center">
+                <input class="btn btn-secondary" type="submit" value="Login">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <div class="text-center">
+                <a asp-area="Identity" asp-page="/Account/Register" class="register-button">Don't have an account? Create one</a>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- login content -->
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
