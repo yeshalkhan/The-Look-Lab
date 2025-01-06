@@ -58,3 +58,4 @@ D:\Study\Semester 6\The Look Lab - Copy\Application\obj\Debug\net8.0\Application
 D:\Study\Semester 6\The Look Lab - Copy\Application\obj\Debug\net8.0\refint\Application.dll
 D:\Study\Semester 6\The Look Lab - Copy\Application\obj\Debug\net8.0\Application.pdb
 D:\Study\Semester 6\The Look Lab - Copy\Application\obj\Debug\net8.0\ref\Application.dll
+D:\Study\Semester 6\SCD\The Look Lab\Application\obj\Debug\net8.0\Application.sourcelink.json

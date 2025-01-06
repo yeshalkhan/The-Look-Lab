@@ -4855,11 +4855,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\Semester 6\\The Look Lab - Copy\\API\\API.csproj",
+      "projectUniqueName": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Study\\Semester 6\\The Look Lab - Copy\\API\\API.csproj",
+      "projectPath": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\API.csproj",
       "packagesPath": "C:\\Users\\computer point\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\Semester 6\\The Look Lab - Copy\\API\\obj\\",
+      "outputPath": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4881,14 +4881,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Study\\Semester 6\\The Look Lab - Copy\\Application\\Application.csproj": {
-              "projectPath": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Application\\Application.csproj"
+            "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Application\\Application.csproj": {
+              "projectPath": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Application\\Application.csproj"
             },
-            "D:\\Study\\Semester 6\\The Look Lab - Copy\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Domain\\Domain.csproj"
+            "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Domain\\Domain.csproj"
             },
-            "D:\\Study\\Semester 6\\The Look Lab - Copy\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Infrastructure\\Infrastructure.csproj"
+            "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

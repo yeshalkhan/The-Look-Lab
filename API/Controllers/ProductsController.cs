@@ -83,6 +83,8 @@ namespace API.Controllers
             _memoryCache.Remove("LatestProducts");
             _memoryCache.Remove("AllProducts");
             _memoryCache.Remove("CountProducts");
+            _memoryCache.Remove(product.Category + "Products");
+
 
             return Ok();
         }
@@ -131,6 +133,7 @@ namespace API.Controllers
             _memoryCache.Remove("LatestProducts");
             _memoryCache.Remove("AllProducts");
             _memoryCache.Remove("Product" + product.Id);
+            _memoryCache.Remove(product.Category + "Products");
 
             return Ok();
         }
@@ -162,6 +165,8 @@ namespace API.Controllers
             _memoryCache.Remove("AllProducts");
             _memoryCache.Remove("CountProducts");
             _memoryCache.Remove("Product" + productId);
+            _memoryCache.Remove(productToDelete.Category + "Products");
+
 
             return Ok("Product deleted successfully");
         }
@@ -190,6 +195,24 @@ namespace API.Controllers
         {
             var products = await _productService.SearchProducts(searchterm);
             return Ok(products);
+        }
+
+        [AllowAnonymous]
+        [HttpGet("Categories/{categoryName}")]
+        public async Task<IActionResult> ViewCategory(string categoryName)
+        {
+            string cacheKey = categoryName + "Products";
+
+            // Check if products are already present in cache 
+            if (!_memoryCache.TryGetValue(cacheKey, out List<Product>? categoryProducts))
+            {
+                List<Product> products = await _productService.GetCategory(categoryName);
+                var cacheEntryOptions = new MemoryCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromMinutes(30));
+                _memoryCache.Set(cacheKey, products, cacheEntryOptions);
+                return new OkObjectResult(products);
+            }
+
+            return new OkObjectResult(categoryProducts);
         }
     }
 }

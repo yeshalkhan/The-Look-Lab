@@ -58,3 +58,4 @@ D:\Study\Semester 6\The Look Lab - Copy\Infrastructure\obj\Debug\net8.0\Infrastr
 D:\Study\Semester 6\The Look Lab - Copy\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
 D:\Study\Semester 6\The Look Lab - Copy\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 D:\Study\Semester 6\The Look Lab - Copy\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+D:\Study\Semester 6\SCD\The Look Lab\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

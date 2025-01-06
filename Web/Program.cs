@@ -29,7 +29,6 @@ builder.Services.AddScoped<IRepository<Cart>, GenericRepository<Cart>>();
 builder.Services.AddScoped<IRepository<Order>, GenericRepository<Order>>();
 builder.Services.AddScoped<IRepository<OrderItem>, GenericRepository<OrderItem>>();
 builder.Services.AddScoped<IRepository<User>, GenericRepository<User>>();
-builder.Services.AddScoped<IRepository<Category>, GenericRepository<Category>>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICartRepository, CartRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();

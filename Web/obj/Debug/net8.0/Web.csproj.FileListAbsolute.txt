@@ -1183,3 +1183,4 @@ D:\Study\Semester 6\The Look Lab - Copy\Web\obj\Debug\net8.0\refint\Web.dll
 D:\Study\Semester 6\The Look Lab - Copy\Web\obj\Debug\net8.0\Web.pdb
 D:\Study\Semester 6\The Look Lab - Copy\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
 D:\Study\Semester 6\The Look Lab - Copy\Web\obj\Debug\net8.0\ref\Web.dll
+D:\Study\Semester 6\SCD\The Look Lab\Web\obj\Debug\net8.0\Web.sourcelink.json

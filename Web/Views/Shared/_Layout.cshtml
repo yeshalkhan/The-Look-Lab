@@ -31,10 +31,9 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md" id="navbar-color" data-aos="fade-down"
+    <nav class="navbar navbar-expand-md" data-aos="fade-down"
             data-aos-easing="linear"
-            data-aos-duration="1500"
-            style="background-color: #fef4ec;">
+            data-aos-duration="1500">
 
         <div class="container">
             <!-- Brand -->
@@ -45,39 +44,41 @@
 
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span><img src="/images/menu.png" alt=""></span>
+                <span><img src="/images/menu.png" alt="Menu"></span>
             </button>
 
             <!-- Navbar links -->
-            <div class="collapse navbar-collapse-sm navbar-collapse-md navbar-collapse" id="collapsibleNavbar">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link"})
+                        @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        @Html.ActionLink("Products", "Index", "Products", null, new {@class = "nav-link"})
+                        @Html.ActionLink("Products", "Index", "Products", null, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="categoryDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                        <div class="dropdown-menu" aria-labelledby="categoryDropdownMenu">
+                            <a class="dropdown-item" href="/Products/Categories/Eyes">Eyes</a>
+                            <a class="dropdown-item" href="/Products/Categories/Lips">Lips</a>
+                            <a class="dropdown-item" href="/Products/Categories/Face">Face</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        @Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })
-                    </li>
-                    <li class="nav-item">
-                        @Html.ActionLink("Contact", "Contact", "Home",null,new { @class = "nav-link" })
+                        @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })
                     </li>
                 </ul>
             </div>
-            <form class="form-inline ">
+
+            <form class="form-inline">
                 <div class="login_text">
                     <ul>
-                        <li><a href="@Url.Action("Index","Cart")"><img src="/images/cart.png"></a></li>
-                        <li><a href="#search-popup"><img src="/images/search-icon.png"></a></li>
-                        <li><a asp-area="Identity" asp-page="/Account/Login"><img src="/images/user-icon.png"></a></li>
-                        @* <li class="nav-item">
-                                <partial name="_LoginPartial" />
-                        </li> *@
-                </ul>
+                        <li><a href="@Url.Action("Index", "Cart")"><img src="/images/cart.png" alt="Cart"></a></li>
+                        <li><a href="#search-popup"><img src="/images/search-icon.png" alt="Search"></a></li>
+                        <li><a asp-area="Identity" asp-page="/Account/Login"><img src="/images/user-icon.png" alt="Login"></a></li>
+                    </ul>
                 </div>
             </form>
-
         </div>
     </nav>
     <!-- navbar end -->
@@ -118,7 +119,7 @@
                             Pakistan <br><br>
                         </p>
                         <strong>Phone: <strong>+92 3009475080</strong></strong><br>
-                        <strong>Email: <strong>info@thelooklab.com</strong></strong>
+                        <strong>Email: <strong>thelooklabcosmetics@gmail.com</strong></strong>
                     </div>
 
                     <div class="col-lg-4 col-md-4 col-sm-6 footer-links">
@@ -145,7 +146,7 @@
                         <p>Reach out to us for any complaints, recommendations or assistance.</p>
                         <div class="socail-links mt-3">
                             <a href="https://twitter.com/yeshalkhan" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://www.facebook.com/multiverseOfSadnesss" class="facebook"><i class="bx bxl-facebook"></i></a>
                             <a href="https://www.instagram.com/browngirlyeshal/" class="instagram"><i class="bx bxl-instagram"></i></a>
                             <a href="https://www.linkedin.com/in/yeshalkhan/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                         </div>

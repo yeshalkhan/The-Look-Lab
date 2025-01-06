@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study\\Semester 6\\The Look Lab - Copy\\Application\\Application.csproj": {}
+    "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Application\\Application.csproj": {}
   },
   "projects": {
-    "D:\\Study\\Semester 6\\The Look Lab - Copy\\Application\\Application.csproj": {
+    "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Application\\Application.csproj",
+        "projectPath": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\computer point\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Application\\obj\\",
+        "outputPath": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Study\\Semester 6\\The Look Lab - Copy\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Domain\\Domain.csproj"
+              "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Domain\\Domain.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "D:\\Study\\Semester 6\\The Look Lab - Copy\\Domain\\Domain.csproj": {
+    "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\computer point\\.nuget\\packages\\",
-        "outputPath": "D:\\Study\\Semester 6\\The Look Lab - Copy\\Domain\\obj\\",
+        "outputPath": "D:\\Study\\Semester 6\\SCD\\The Look Lab\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

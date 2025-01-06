@@ -52,5 +52,10 @@ namespace Application.Services
         {
             return await productRepository.SearchProducts(searchterm);
         }
+
+        public async Task<List<Product>> GetCategory(string categoryName)
+        {
+            return await productRepository.GetCategory(categoryName);
+        }
     }
 }

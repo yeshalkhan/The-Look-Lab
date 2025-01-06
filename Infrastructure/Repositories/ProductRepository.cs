@@ -75,5 +75,17 @@ namespace Infrastructure.Repositories
                 return result.ToList();
             }
         }
-	}
+
+        public async Task<List<Product>> GetCategory(string categoryName)
+        {
+            var query = $"SELECT * FROM PRODUCT WHERE Category = @categoryName";
+            using (var connection = new SqlConnection(connectionString))
+            {
+                await connection.OpenAsync();
+                var result = await connection.QueryAsync<Product>(query, new { categoryName = categoryName });
+                return result.ToList();
+            }
+        }
+
+    }
 }

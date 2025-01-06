@@ -3,6 +3,8 @@ using System.Diagnostics;
 using Domain.Entities;
 using Application.Services;
 using Microsoft.Extensions.Caching.Memory;
+using System.Net.Mail;
+using System.Net;
 
 namespace The_Look_Lab.Controllers
 {
@@ -52,6 +54,9 @@ namespace The_Look_Lab.Controllers
         {
             return View();
         }
+
+        
+
 
         public IActionResult DisplayMessage()
         {

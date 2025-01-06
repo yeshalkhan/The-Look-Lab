@@ -84,6 +84,7 @@ namespace The_Look_Lab.Controllers
             _memoryCache.Remove("LatestProducts");
             _memoryCache.Remove("AllProducts");
             _memoryCache.Remove("CountProducts");
+            _memoryCache.Remove(product.Category + "Products");
 
             return Ok();
         }
@@ -160,6 +161,7 @@ namespace The_Look_Lab.Controllers
             _memoryCache.Remove("LatestProducts");
             _memoryCache.Remove("AllProducts");
             _memoryCache.Remove("Product" + product.Id);
+            _memoryCache.Remove(product.Category + "Products");
 
             return RedirectToAction("ManageProducts", "Products");
         }
@@ -187,6 +189,8 @@ namespace The_Look_Lab.Controllers
                 _memoryCache.Remove("AllProducts");
                 _memoryCache.Remove("CountProducts");
                 _memoryCache.Remove("Product" + productId);
+                _memoryCache.Remove(productToDelete.Category + "Products");
+
 
                 return Ok("Product deleted successfully");
             }
@@ -228,5 +232,29 @@ namespace The_Look_Lab.Controllers
             return View(matchingProduct);
         }
 
+        // Apply Output Caching for 60 seconds
+        [ResponseCache(Duration = 60, Location = ResponseCacheLocation.Any, NoStore = false)]
+        [AllowAnonymous]
+        [Route("Products/Categories/{categoryName}")]
+        public async Task<IActionResult> ViewCategory(string categoryName)
+        {
+            string cacheKey = categoryName + "Products";
+            if (categoryName == "Lips") ViewBag.Heading = "LIP PRODUCTS";
+            else if (categoryName == "Eyes") ViewBag.Heading = "EYE PRODUCTS";
+            else ViewBag.Heading = "FACE PRODUCTS";
+
+            // Check if products are already present in cache 
+            if (!_memoryCache.TryGetValue(cacheKey, out List<Product>? categoryProducts))
+            {
+                List<Product> products = await _productService.GetCategory(categoryName);
+
+                // Remove from cache after 15 minutes
+                var cacheEntryOptions = new MemoryCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromMinutes(30));
+                _memoryCache.Set(cacheKey, products, cacheEntryOptions);
+                return View("Index", products);
+            }
+
+            return View("Index", categoryProducts);
+        }
     }
 }

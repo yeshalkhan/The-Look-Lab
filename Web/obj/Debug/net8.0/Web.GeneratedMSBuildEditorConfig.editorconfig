@@ -17,147 +17,147 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = The_Look_Lab
 build_property.RootNamespace = The_Look_Lab
-build_property.ProjectDir = D:\Study\Semester 6\The Look Lab - Copy\Web\
+build_property.ProjectDir = D:\Study\Semester 6\SCD\The Look Lab\Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Study\Semester 6\The Look Lab - Copy\Web
+build_property.MSBuildProjectDirectory = D:\Study\Semester 6\SCD\The Look Lab\Web
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Areas/Identity/Pages/Account/Login.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Areas/Identity/Pages/Account/Logout.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Admin/Index.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Admin/OrdersTable.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Admin/OrdersTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3JkZXJzVGFibGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Admin/ProductTable.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Admin/ProductTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdFRhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Admin/UsersTable.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Admin/UsersTable.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnNUYWJsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Cart/Index.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Home/About.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Home/Contact.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Home/Index.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Order/Index.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Order/OrderConfirmation.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Order/OrderConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJDb25maXJtYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Products/AddProduct.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Products/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQWRkUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Products/EditProductForm.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Products/EditProductForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdFByb2R1Y3RGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Products/Index.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Products/ManageProducts.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Products/ManageProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcTWFuYWdlUHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Products/ViewProduct.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Products/ViewProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcVmlld1Byb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Products/ViewProducts.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Products/ViewProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcVmlld1Byb2R1Y3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Shared/Error.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Shared/_AdminLayout.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Shared/_BasicPage.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Shared/_BasicPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CYXNpY1BhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Shared/_LoginPartial.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Shared/_ProductsPartial.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Shared/_ProductsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qcm9kdWN0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Shared/_RecentProducts.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Shared/_RecentProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZWNlbnRQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Shared/_SimpleLayout.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Shared/_SimpleLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaW1wbGVMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/_ViewImports.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/_ViewStart.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Study/Semester 6/The Look Lab - Copy/Web/Views/Shared/_Layout.cshtml]
+[D:/Study/Semester 6/SCD/The Look Lab/Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lzldzk1rll
