@@ -55,7 +55,37 @@ namespace The_Look_Lab.Controllers
             return View();
         }
 
-        
+        [HttpPost]
+        public async Task<IActionResult> SendEmail(string email, string name, string city, string message)
+        {
+            try
+            {
+                using (var mail = new MailMessage())
+                {
+                    mail.From = new MailAddress(email);
+                    mail.To.Add("thelooklabcosmetics@gmail.com");
+                    mail.Subject = $"Message from {email}";
+                    mail.Body = $"{name} from {city} says:\n{message}";
+                    mail.IsBodyHtml = false;
+
+                    using (var smtp = new SmtpClient())
+                    {
+                        smtp.Host = "smtp.gmail.com";
+                        smtp.Port = 587;
+                        smtp.EnableSsl = true;
+                        smtp.Credentials = new NetworkCredential("thelooklabcosmetics@gmail.com", "uayf ycxo oupy yfqx");
+                        await smtp.SendMailAsync(mail);
+                    }
+                }
+                TempData["Message"] = "Thank you for your feedback!";
+                return RedirectToAction("DisplayMessage");
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = "Your feedback could not be sent. Please try again.";
+                return RedirectToAction("DisplayMessage");
+            }
+        }
 
 
         public IActionResult DisplayMessage()
