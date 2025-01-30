@@ -1,0 +1,31 @@
+﻿@using Domain.Entities
+@model User
+@using Newtonsoft.Json
+@{
+    ViewBag.Title = "Edit Profile - The Look Lab";
+}
+
+<form class="container" data-aos="fade-up" data-aos-duration="1500" id="profile" method="post" action="/User/EditProfile">
+    <h1 class="text-center">EDIT PROFILE</h1>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <h3>Name</h3>
+            <input type="text" id="name" class="form-control form-control" name="name" value="@Model.Name">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6">
+            <h3>Email</h3>
+            <input type="text" id="email" class="form-control form-control" name="email" value="@Model.Email">
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-3">
+        <div class="col-lg-5 col-md-6">
+            <div class="text-center">
+                <button type="submit" class="btn btn-secondary" >Save Changes</button>
+            </div>
+        </div>
+    </div>
+</form>

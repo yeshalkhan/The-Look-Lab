@@ -70,24 +70,26 @@
                 </ul>
             </div>
 
-            <form class="form-inline">
+            <div class="form-inline">
                 <div class="login_text">
                     <ul>
                         <li><a href="@Url.Action("Index", "Cart")"><img src="/images/cart.png" alt="Cart"></a></li>
-                        <li><a href="#search-popup"><img src="/images/search-icon.png" alt="Search"></a></li>
-                        <li><a asp-area="Identity" asp-page="/Account/Login"><img src="/images/user-icon.png" alt="Login"></a></li>
+                        <li><a id="search-icon" href="#search-popup"><img src="/images/search-icon.png" alt="Search"></a></li>
+                        <li>
+                            <partial name="_LoginPartial" />
+                        </li>
                     </ul>
                 </div>
-            </form>
+            </div>
         </div>
     </nav>
     <!-- navbar end -->
 
     <!-- search popup -->
     <div id="search-popup" class="modal">
-        <input id="search-field" type="search" name="searchterm" placeholder="Search" size="40" required>
+        <input id="search-field" type="search" name="searchterm" placeholder="Search by name, category, brand" size="40" required>
         <button type="submit" id="search-symbol"><img src="/images/search-icon.png"></button>
-        <a href="#" class="close-button">&times;</a>
+        <a href="#" id="close-search-popup" class="close-button">&times;</a>
     </div>
     <!-- search popup -->
 

@@ -1,0 +1,47 @@
+﻿@using Domain.Entities;
+@model (List<Product>,List<int>)
+
+@{
+    ViewBag.Title = "Order Details - The Look Lab";
+}
+
+<div class="container" id="profile" data-aos="fade-up" data-aos-duration="1500">
+    <h1 class="text-center">
+        MY ORDER DETAILS
+    </h1>
+    <div class="table-wrapper">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Brand</th>
+                    <th>Category</th>
+                    @* <th>Description</th> *@
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int index = 0;
+                }
+                @foreach (var product in Model.Item1)
+                {
+                    <tr>
+                        <td>@product.Id</td>
+                        <td>@product.Name</td>
+                        <td><img style="width:70px;" src="@product.Image" alt="No preview available" /></td>
+                        <td>@product.Price</td>
+                        <td>@Model.Item2[index++]</td>
+                        <td>@product.Brand</td>
+                        <td>@product.Category</td>
+                        @* <td>@product.Description</td> *@
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

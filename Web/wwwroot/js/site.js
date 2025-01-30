@@ -116,6 +116,26 @@ function addProduct() {
     });
 };
 
+function deleteProduct(button) {
+    if (confirm("Are you sure you want to delete this product?")) {
+        var productId = $(button).data('product-id');
+        $.ajax({
+            type: 'POST',
+            url: '/Products/DeleteProduct',
+            data: { productId: productId },
+            success: function (result) {
+                showMessage(result);
+                // Refresh the page to show changes
+                window.location.reload();
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.error('Error details:', jqXHR);
+                alert('Error: ' + jqXHR.responseText);
+            }
+        });
+    }
+};
+
 // Search button
 $(document).ready(function () {
     $('#search-symbol').click(function (e) {
@@ -129,13 +149,23 @@ $(document).ready(function () {
             method: 'GET',
             data: { searchterm: data },
             success: function (result) {
+                $('#search-popup').hide();
                 // Replace main content with search results
                 $('#main-content').html(result);
+
             },
             error: function (error) {
                 console.error('Error:', error); // Log any errors to the console
             }
         });
+    });
+
+    $('#search-icon').focus(function () {
+        $('#search-popup').css('display', 'flex');
+    });
+
+    $('#close-search-popup').focus(function () {
+        $('#search-popup').hide();
     });
 
     $('#admin-search-symbol').click(function (e) {

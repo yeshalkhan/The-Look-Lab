@@ -61,13 +61,17 @@ namespace The_Look_Lab.Controllers
                 DeliveryInstructions = _order.DeliveryInstructions,
                 TotalPrice = _order.TotalPrice,
                 OrderDate = DateTime.Now,
-                Status = "In progress"
+                Status = "In progress",
             };
-
-            int orderId = await _orderService.Add(order); // Returns the newly inserted Order ID
 
             // Get the currently logged-in user
             var user = await _userManager.GetUserAsync(User);
+
+            if (user != null)
+                order.UserId = user.Id;
+
+            int orderId = await _orderService.Add(order); // Returns the newly inserted Order ID
+
 
             // If user is authenticated / logged in, get cart data from database
             if (user != null)

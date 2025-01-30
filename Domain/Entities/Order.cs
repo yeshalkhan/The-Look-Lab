@@ -36,8 +36,10 @@ namespace Domain.Entities
 
         [StringLength(25)]
         public string? Status { get; set; }
+
+        public string UserId { get; set; }
         public Order() { }
-        public Order( string name="", string email= "", string phoneNumber = "", string postalCode = "", string address = "", string state = "", string city = "", string deliveryInstructions = "")
+        public Order(string name = "", string email = "", string phoneNumber = "", string postalCode = "", string address = "", string state = "", string city = "", string deliveryInstructions = "", string userId = "")
         {
             CustomerName = name;
             Email = email;
@@ -47,6 +49,7 @@ namespace Domain.Entities
             State = state;
             City = city;
             DeliveryInstructions = deliveryInstructions;
+            UserId = userId;
         }
     }
 }

@@ -2,6 +2,7 @@
 using Dapper;
 using Domain.Interfaces;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 
 namespace Infrastructure.Repositories
 {
@@ -45,7 +46,7 @@ namespace Infrastructure.Repositories
 
         public async Task<int> Update(TEntity entity)
         {
-            var tableName = typeof(TEntity).Name;
+            var tableName = typeof(TEntity).Name == "User" ? "AspNetUsers" : typeof(TEntity).Name;
             var primaryKey = "Id";
             var properties = typeof(TEntity).GetProperties()
                                              .Where(p => p.Name != primaryKey);

@@ -6,11 +6,12 @@
      data-aos-duration="1500">
     <h1 class="text-center" id="product-h1">@Model.Item2</h1>
     <br>
+  
     <div id="product">
         @if (Model.Item1.Count == 0)
         {   
             <div>
-                <p>No products found</p> 
+                <p>No products found.</p> 
             </div>
         }
 
@@ -40,34 +41,7 @@
 </div>
 <!-- products content -->
 
-<!-- product modals content-->
- @* @foreach (var product in Model.Item1)
- {
-     string modalLink = product.Id + "-modal";
-     <div id="@modalLink" class="modal">
-         <div class="item-popup">
-             <div><img src="@product.Image" alt="No preview available" class="img-responsive"></div>
-             <div class="product-desc">
-                 <h4>@product.Name</h4>
-                 <p class="detail">
-                     Brand: @product.Brand<br>
-                     Price: Rs. @product.Price<br>
-                     Category: @product.Category
-                 </p>
-                 <p style="text-align: justify;">
-                     @product.Description
-                 </p>
-                 <div class="quantity-selector">
-                     <p class="detail">Quantity:</p>
-                     <input type="number" id="quantity" name="quantity" class="form-control form-control" placeholder="Quantity" min="1">
-                 </div>
-                 <button type="button" onclick="addToCart(this)" data-product-id="@product.Id" class="btn btn-secondary">Add to Cart</button>
-             </div>
-         </div>
-         <a href="#" class="close-button">&times;</a>
-     </div>
- } *@
-<!-- product modals content-->
+
 
 
 

@@ -116,33 +116,3 @@
 <!-- product modals content-->
 
 
-<script type="text/javascript">
-    function showMessage(msg) {
-        var message = document.getElementById("message");
-        message.innerText = msg;
-        message.className = "message show";
-        setTimeout(function () {
-            message.className = "message";
-        }, 2000); // Hide after 2 seconds
-    };
-
-    function deleteProduct(button) {
-        if (confirm("Are you sure you want to delete this product?")) {
-            var productId = $(button).data('product-id');
-            $.ajax({
-                type: 'POST',
-                url: '/Products/DeleteProduct',
-                data: { productId: productId },
-                success: function (result) {
-                    showMessage(result);
-                    // Refresh the page to show changes
-                    window.location.reload();
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    console.error('Error details:', jqXHR);
-                    alert('Error: ' + jqXHR.responseText);
-                }
-            });
-        }
-    };
-</script>
